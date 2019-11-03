@@ -1,0 +1,12 @@
+p {
+  font-family: Lato;
+}
+
+.status{
+  color: green;
+}
+
+
+.no_status{
+  color: red;
+}

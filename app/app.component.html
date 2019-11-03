@@ -1,0 +1,23 @@
+<h1 class='status'>hello</h1>
+
+<table border="1">
+  <tr>
+    <th>id</th><th>product name</th>
+  </tr>
+  <tr *ngFor="let elem of iproducts">
+    <td>{{ elem.ProductID }}</td><td>{{ elem.ProductName }}</td>
+  </tr>
+</table>
+
+
+<table border=1>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.userId}}</td>
+    <td>
+      <span [ngClass]="user.completed === true ? 'status': 'no_status'">
+      {{user.completed}}
+      </span>
+    </td>
+    <td>{{user.title}}</td>
+  </tr>
